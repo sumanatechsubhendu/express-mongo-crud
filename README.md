@@ -1,4 +1,4 @@
-# CRUD using Node js (Express + Mysql) 
+# CRUD using Node js (Express + MongoDB) 
 
 ## Task Description
 
