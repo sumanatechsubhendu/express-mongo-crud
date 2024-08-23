@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "84d39dd1-8de4-41b9-be4b-7db42cdd8b7c",
+		"name": "Product API",
+		"description": "Collection of API endpoints for managing Products, including Create, Retrieve, Update, and Delete operations, as well as file uploads.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31795748"
+	},
+	"item": [
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"wednesday product\",\n    \"price\": \"177.00\",\n    \"description\": \"This is a wednesday product.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Updated Product\",\n    \"price\": 150.00\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "66c38802dcbee16a031a177a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload image file",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/webwizardsusa/Downloads/photo/passport size photo.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/:id/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						":id",
+						"upload"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "66c38802dcbee16a031a177a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/products/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
