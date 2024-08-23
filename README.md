@@ -2,7 +2,7 @@
 
 ## Inspiration
 
-GIT URL (https://github.com/laravel/breeze-next) project. 🏝️
+GIT URL (https://github.com/sumanatechsubhendu/express-mongo-crud) project. 🏝️
 DOC LINK (https://docs.google.com/document/d/1MHwp9b5baAoE3oh3mn3PqEYhdjehxGo2xqL5pTa0-jk/edit?usp=sharing)
 
 ## Introduction
@@ -12,19 +12,19 @@ Creating a CRUD (Create, Read, Update, Delete) application using Express.js and 
 ## Documentation
 Please follow the below PDF file for details overview
 
-[Learning Docs For Node.js (Express + Mysql)](https://github.com/sumanatechsubhendu/express-mysql-crud/blob/master/Learning%20Docs%20For%20%20Node%20js%20(Express%20%2B%20Mysql)%20.pdf)
+[Learning Docs For Node.js (Express + Mysql)](https://github.com/sumanatechsubhendu/express-mysql-crud/blob/master/Learning%20Docs%20For%20%20Node%20js%20(Express%20%2B%20MongoDb Compass)%20.pdf)
 
 
 ### Installation
 clone the git repo by using below command
 
-git clone https://github.com/sumanatechsubhendu/express-mysql-crud.git
+git clone https://github.com/sumanatechsubhendu/express-mongo-crud.git
 
 ```bash
 # Install npm packages and dependencies...
 npm install
 
-nodemon app.js
+nodemon server.js
 ```
 
 Next, clone this repository and install its dependencies with `yarn install` or `npm install`. Then, copy the `.env.example` file to `.env` and supply the URL of your backend:
@@ -34,7 +34,7 @@ JWT_SECRET="d4e79c638e6b80d5b0fbfc3ab80cd9f08674c0fe91dcd75e6743bb1d1f1461ddb5c4
 JWT_REFRESH_SECRET="49e27134ecc747120306b019768472fe0d45c5c4076b0d89d37f6a6d059d2bb5a8b1e24042d34039d3986ce45c04b1ca5e83adf017b2a690545d7c1c0b3288f3"
 ```
 
-Finally, run the application via `nodemon app.js`. The application will be available at `http://localhost:3000`:
+Finally, run the application via `nodemon server.js`. The application will be available at `http://localhost:3000`:
 
 ```
 nodemon app.js
