@@ -3,10 +3,19 @@ const mongoose = require('mongoose');
 const Product = require('./models/Product');
 const multer = require('multer');
 const path = require('path');
+const fs = require('fs');
 const bodyParser = require('body-parser');
 const { body, validationResult } = require('express-validator');
 
 const app = express();
+
+// Define the path for uploads/images
+const uploadPath = 'uploads/image';
+
+// Check if the directory exists; if not, create it
+if (!fs.existsSync(uploadPath)) {
+    fs.mkdirSync(uploadPath, { recursive: true });
+}
 
 // Configure multer storage to handle the file destination and naming
 const storage = multer.diskStorage({
