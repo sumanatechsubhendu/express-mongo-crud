@@ -77,5 +77,21 @@ Finally, run the application via `nodemon server.js`. The application will be av
 nodemon app.js
 ```
 
+## Step 1: Start MongoDB Server
+
+### 1. Create the Data Directory (if it doesn’t already exist)
+
+MongoDB uses the `/data/db` directory by default to store its data. Create this directory using the following command:
+
+```bash
+sudo mkdir -p /data/db
+```
+
+Finally, run the application via `mongod`. The application will be available at `mongodb://localhost:27017/products`:
+
+```
+mongod
+```
+
 > Note: Currently, we recommend using `localhost` during local development of your backend and frontend to avoid CORS "Same-Origin" issues.
 
