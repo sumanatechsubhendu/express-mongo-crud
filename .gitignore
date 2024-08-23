@@ -1,0 +1,16 @@
+# Node.js dependencies
+node_modules/
+
+# Logs and temporary files
+*.log
+/tmp
+*.tmp
+
+# Ignore specific upload directories
+uploads/image/
+
+# Ignore system files
+.DS_Store
+
+# Ignore environment files
+.env

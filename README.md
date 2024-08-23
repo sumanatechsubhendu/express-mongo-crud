@@ -1,36 +1,42 @@
 # CRUD using Node js (Express + Mysql) 
-Task Description:
-Setup and Configuration:
 
-Install necessary Express.js dependencies such as Multer (for file upload) and any other validation packages.
-Database Schema:
+## Task Description
+
+### 1. Database Schema
 
 Create a schema for the Product resource. Each product should have the following fields:
-name (String, required, min length 3, max length 50)
-price (Number, required, min value 0)
-description (String, optional, max length 500)
-imageUrl (String, optional)
-CRUD Operations:
+
+- **name**: `String`, required, min length 3, max length 50
+- **price**: `Number`, required, min value 0
+- **description**: `String`, optional, max length 500
+- **imageUrl**: `String`, optional
+
+### 2. CRUD Operations
 
 Implement CRUD endpoints for the Product resource:
-Create: POST /products
-List All: GET /products
-Update: PUT /products/:id
-Delete: DELETE /products/:id
+
+- **Create**: `POST /products`
+- **List All**: `GET /products`
+- **Update**: `PUT /products/:id`
+- **Delete**: `DELETE /products/:id`
+
 Ensure proper request validation and error handling for each operation.
-File Upload:
 
-Implement file upload functionality using Multer.
-Create an endpoint to handle file uploads and associate the uploaded file with a product.
-File Upload: POST /products/:id/upload
-Validation Middleware:
+### 3. File Upload
 
-Create custom middleware for validating incoming requests for the CRUD operations.
-Implement validation checks:
-Ensure name is between 3 to 50 characters.
-Ensure price is a positive number.
-Ensure description does not exceed 500 characters.
-For file uploads, ensure the file type accepts jpg, jpeg, png and size maximum 5MB.
+Implement file upload functionality using Multer. Create an endpoint to handle file uploads and associate the uploaded file with a product:
+
+- **File Upload**: `POST /products/:id/upload`
+
+### 4. Validation Middleware
+
+Create custom middleware for validating incoming requests for the CRUD operations. Implement validation checks to ensure:
+
+- **Name** is between 3 to 50 characters.
+- **Price** is a positive number.
+- **Description** does not exceed 500 characters.
+- For file uploads, ensure the file type accepts `jpg`, `jpeg`, `png` and the size is a maximum of 5MB.
+
 ## Inspiration
 
 GIT URL (https://github.com/sumanatechsubhendu/express-mongo-crud) project. 🏝️
