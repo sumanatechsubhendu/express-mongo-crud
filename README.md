@@ -40,7 +40,7 @@ Create custom middleware for validating incoming requests for the CRUD operation
 ## Inspiration
 
 GIT URL (https://github.com/sumanatechsubhendu/express-mongo-crud) project. 🏝️
-DOC LINK (https://docs.google.com/document/d/1MHwp9b5baAoE3oh3mn3PqEYhdjehxGo2xqL5pTa0-jk/edit?usp=sharing)
+DOC LINK (https://docs.google.com/document/d/1fQxArKBlhreBodShNTcPiPBaEPHFuxV0MyI2STBYG_8/edit?usp=sharing)
 
 ## Introduction
 
